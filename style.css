@@ -1,0 +1,72 @@
+ html,
+ body {
+  height: 100%;
+ }
+ 
+ body {
+  cursor: url("m.png"), auto;
+ }
+ 
+ .transparent {
+  background: rgba(255, 209, 220, .8);
+ }
+ 
+ .pillz {
+  font-size: 150%;
+ }
+ 
+ .navbar-default .navbar-brand,
+ .navbar-default .navbar-nav>li>a {
+  color: white;
+ }
+ 
+ .navbar-default .navbar-brand:focus,
+ .navbar-default .navbar-brand:hover,
+ .navbar-default .nav>li>a:focus,
+ .navbar-default .nav>li>a:hover {
+  color: #E04C32;
+ }
+ /**/
+ 
+ @media screen and (min-width: 0px) {
+  h1 {
+   font-size: 50px;
+  }
+ }
+ 
+ @media screen and (min-width: 768px) {
+  h1 {
+   font-size: 100px;
+  }
+ }
+ 
+ @media screen and (min-width: 992px) {
+  h1 {
+   font-size: 100px;
+  }
+ }
+ 
+ @media screen and (min-width: 1200px) {
+  h1 {
+   font-size: 120px;
+  }
+ }
+ 
+ a:link,
+ a:visited {
+  color: #E04C32;
+  background-color: transparent;
+  text-decoration: none
+ }
+ 
+ a:hover {
+  color: pink;
+  background-color: transparent;
+  text-decoration: underline
+ }
+ 
+ a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline
+ }
