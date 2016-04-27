@@ -13,7 +13,6 @@ body {
 	font-size: 30px;
 	font-size: 3rem;
 	text-align: center;
-	background-color: #c9d5e1;
 }
 
 h1 {
@@ -31,12 +30,7 @@ p {
 	line-height: 1.2;
 }
 
-a, a:visited {
-	color: #1a4a6a;
-	font-weight: bold;
-	font-style: italic;
-	text-shadow: none;
-}
+
 
 small {
 	line-height: 1;
