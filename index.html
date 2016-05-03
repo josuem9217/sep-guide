@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css" type="text/css">
     <link rel="stylesheet" href="scrolldeckcss/normalize.css" type="text/css">
-      <link rel="stylesheet" href="animate.css-master/sour/animate.min.css">
+    <link rel="stylesheet" href="animate/animate.min.css">
 
 
 
@@ -51,14 +51,20 @@
         </div>
     </nav>
 
-    <div class="skake">
-        <div class="text-center" id="landing">
-            <h1>PICTURE OF US
+    <div class="slide">
+
+    </div>
+
+    <div class=" slide">
+        <div id="aniBounce">
+            <div class="text-center" id="landing">
+                <h1>PICTURE OF US
             <!--I WANT THAT ANIMATION FOR A CIRCLE IMAGE, SO THERES NOTHING ON
             THE PAGE UMTIL YOU SCROLL DOWN AND IT LIKES FLOATS UP.,
             BUT IT DOESN'T RLY FLOAT, IT'S MORE OF A BOUNCE IF THAT MAKES SENSE
             LIKE YOU SCROLL DOWN AND THE IMAGE BOUNCES UP SO IT LOOKS SEAMLESS--> 
             </h1>
+            </div>
         </div>
     </div>
 
@@ -120,6 +126,18 @@
             var s = document.getElementsByTagName('script')[0];
             s.parentNode.insertBefore(ga, s);
         })();
+    </script>
+
+    <script>
+        var animateName = "animated shake";
+        var animateEnd = "webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend";
+        $(function() {
+            $("div").on('click', function() {
+                $("di[id=aniBounce]").addClass(animateName).one(animateEnd, function() {
+                    $(this).removeClass(animateName);
+                });
+            })
+        });
     </script>
 
 </body>
