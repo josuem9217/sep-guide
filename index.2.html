@@ -1,0 +1,192 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Probably a different name-->
+    <title>SEP Guide</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <!--custom-->
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="custom.css">
+    <!--Google Fonts-->
+    <link href='https://fonts.googleapis.com/css?family=Inknut+Antiqua:400,900' rel='stylesheet' type='text/css'>
+    <!--Inknut Antiqua = 'Inknut Antiqua', serif;-->
+    <link href='https://fonts.googleapis.com/css?family=Kavoon' rel='stylesheet' type='text/css'>
+    <!--Kavoon = 'Kavoon', cursive;-->
+    <link href='https://fonts.googleapis.com/css?family=Acme' rel='stylesheet' type='text/css'>
+    <!--Acme 'Acme', sans-serif-->
+    <link href='https://fonts.googleapis.com/css?family=Arvo|Cinzel' rel='stylesheet' type='text/css'>
+    <!--Arvo = 'Arvo', serif; and Cinzel = 'Cinzel', serif;-->
+    <link href='https://fonts.googleapis.com/css?family=Dekko' rel='stylesheet' type='text/css'>
+    <!--Dekko = 'Dekko', cursive;-->
+    <link href='https://fonts.googleapis.com/css?family=Ultra' rel='stylesheet' type='text/css'>
+    <!--Ultra = 'Ultra', serif;-->
+    <link href='https://fonts.googleapis.com/css?family=Raleway:500,400,700' rel='stylesheet' type='text/css'>
+    <!--Raleway = 'Raleway', sans-serif;-->
+    <script>
+        $(function() {
+
+            $("#picthing").on('click', function(event) {
+                event.preventDefault();
+                var hash = this.hash;
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 800);
+            });
+
+            var navbar = $('#navbar-main'),
+                distance = navbar.offset().top,
+                $window = $(window);
+            $window.scroll(function() {
+                if ($window.scrollTop() >= distance) {
+                    navbar.removeClass('navbar-fixed-top').addClass('navbar-fixed-top');
+                    $("body").css("padding-top", "0px");
+                }
+                else {
+                    navbar.removeClass('navbar-fixed-top');
+                    $("body").css("padding-top", "0px");
+                }
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1 id="home">
+       <center>Your SEP Survival Guide</center>
+         </h1>
+    </header>
+    <nav id="navbar-main" class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a href="#home"><img id="hstat-logo" src="hstatSep-logo-small.png" width="100px" height="40px"></a>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="#Il">Iniside Learning</a></li>
+                    <li><a href="#Ol">Outside Learning </a></li>
+                    <li><a href="#skills">Useful Skills </a></li>
+                    <li><a href="#resources">Resources </a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img class="first-slide" src="school_front.JPG" alt="First slide" width="1000px">
+            </div>
+            <div class="item">
+                <img class="second-slide" src="classroom.JPG" alt="Second slide" width="1000px">
+            </div>
+            <div class="item">
+                <img class="third-slide" src="SEP_showcase.JPG" alt="Third slide" width="1000px">
+            </div>
+        </div>
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+   
+    <div id="Il" class="container">
+        <h2>Inside Learning</h2>
+        <ul id="content">
+            <li>Participate in class </li>
+            <li>Do your homework</li>
+            <li>Refer to slides and google docs for tests or quizzes </li>
+            <li>Take notes on a google doc during class to put certain concepts in your own words</li>
+            <li>When presenting in class, just relax and take a deep breath. Be proud of your hard work. :)</li>
+            <li>Go to tutoring if you need help</li>
+            <li>Don't be late to class </li>
+            <blockquote>"Early is on time" -Mr. Mueller</blockquote>
+            <li>Make the most out of class trips. They are a great opportunity for networking.</li>
+            <li>In regards to projects, </li>
+            <blockquote>"Done is better than perfect" -Mr. Mueller</blockquote>
+            Make sure you meet all the project requirements and keep in mind the ways that you would want to further improve a project. Reflection is an important part of being a coder, and a person.
+
+        </ul>
+    </div>
+    <div id="Ol" class="container">
+        <h2>Outside Learning</h2>
+        <ul id="content">
+            <li>Take advantage of opportunities such as internships or hackathons
+                <ul>Some examples include:
+                    <li>GenTech</li>
+                    <li>Pathfinders Program</li>
+                    <li>Code Like a Girl</li>
+                </ul>
+            </li>
+            <li>LOYO (Learn on your own)</li>
+            <li>If you have time I recommend making projects on your own to practice and to utilize coding in a way that interests you. </li>
+
+        </ul>
+    </div>
+    <div id="skills" class="container">
+        <h2>Useful Skills</h2>
+        <ul id="content">
+            <li>Plan before you code. Psuedocode (Putting code or what you want to do/ what you want to happen in your own words/human language) </li>
+            <li>Listen in class and take notes on concepts or information you deem important on a Google doc
+
+            <ul><li>I find it useful to translate notes into my own words and not use complete sentences to better understand certain concepts</li></ul></li>
+           <li>Communicate with your partners over text messaging or facebook messaging and try to divide the work evenly</li>
+       <li>When working on projects that only one partner submits, establish who will submit the project the night before</li>
+       <li>Do not give up. Perservere :)</li>
+       <li>Do not be discouraged by errors. Errors are awesome and help you improve. </li>
+
+
+    
+        </ul>
+    </div>
+    
+            <li></li>
+            
+        
+   
+
+       
+                    <a id="link" href="https://sites.google.com/a/hstat.org/meaganc2976sep11/github">Click here to see Meagan's Portfolio as a Junior</a>
+                    <br>
+                    <a id="link" href="https://sites.google.com/a/hstat.org/meaganc2976sep/web-design">Click here to see Meagan's Portfolio as a Sophmore </a>
+                
+            <div class="col-sm-6">
+                <div id="jf" class="collapse">
+                    <h3>Joanne Fung</h3>
+                    <a class="link" href="https://sites.google.com/a/hstat.org/joannef3188sep11/" target="_self">Click here to see Joanne's Portfolio as a Junior</a>
+                    <br> <a class="link" href="https://sites.google.com/a/hstat.org/joannef3188sep/" target="_self">Click here to see Joanne's Portfolio as a Sophmore</a>
+                </div>
+                <a href="#jf" data-toggle="collapse">
+                    <img id="joannemanga" src="joanne.png" class="img-responsive img-circle" width="250" height="250">
+                </a>
+            </div>
+      <a href="http://www.w3schools.com/">W3schools</a>
+</div>
+</body>
+</html>
