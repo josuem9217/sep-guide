@@ -132,6 +132,7 @@ pre {
 	padding: 120px 0;
 	padding: 12rem 0;
 	height: 40rem;
+	padding-top: 70px;
 }
 
 #title {
@@ -139,11 +140,14 @@ pre {
 	margin-top: 40px;
 	margin-top: 4rem;
 }
-
-#landing {
-	padding: 90px 0;
-	padding: 9rem 0;
+h3{
+	line-height: 150%;
+	font-size: 1.3em;
 }
+/*#landing {*/
+/*	padding: 90px 0;*/
+/*	padding: 9rem 0;*/
+/*}*/
 
 
 /*#animations {*/
@@ -272,7 +276,10 @@ pre {
   color: #E04C32;
  }
  
- 
+ .hs{
+ 	line-height: 100%;
+ 	font-size: 4.7em;
+ }
  /**/
  
  /*@media screen and (min-width: 0px) {*/
